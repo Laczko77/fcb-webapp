@@ -1,2 +1,6 @@
 - [BarcaPulse Design System Tokens](project_barcapulse_design_system.md) — colors, fonts, layout conventions locked in Iteration 1
 - [Navbar Auth Integration Placeholder](project_auth_integration.md) — auth props wired but not yet fetching; layout.tsx is the integration point
+- [Dashboard & News Section — Iteration 4.1](project_dashboard_iter4.md) — auth gate pattern, Supabase news fetch, badge component, card layout, route /dashboard
+- [Dashboard Match Section — Iteration 4.2](project_match_section_iter42.md) — MatchSection patterns, win/draw/loss logic, hasTicket CTA gating, dashboard page wiring
+- [Dashboard Standings & Players — Iteration 4.3](project_standings_players_iter43.md) — StandingsSection (La Liga rank panel), PlayersSection (top scorer cards), dashboard wiring
+- [Dashboard Trophies & Poll — Iteration 4.4](project_trophies_poll_iter44.md) — TrophiesSection (static 4-block), PollSection (Supabase polls, active/empty state), Community placeholder replaced

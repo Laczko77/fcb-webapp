@@ -3,3 +3,4 @@
 - [Environment Variables Setup](project_env.md) — required env vars, file locations, gitignore exceptions for example files
 - [Supabase Schema Overview](supabase_schema.md) — all tables, FK structure, RLS patterns, triggers, and Storage bucket names
 - [Supabase Client Setup](supabase_clients.md) — client/server/middleware factory patterns, route protection rules, JWT-only role check
+- [API-Football Client Layer](api_football_client.md) — apiFetch signature, mock switching logic, endpoint keys, env vars, caching policy

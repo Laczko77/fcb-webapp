@@ -11,9 +11,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 | Metrika              | Érték |
 |----------------------|-------|
 | Összes feladat       | 42    |
-| Elvégzett feladat    | 38    |
-| Hátralévő feladat    | 4     |
-| Készültség           | ~90%  |
+| Elvégzett feladat    | 15    |
+| Hátralévő feladat    | 27    |
+| Készültség           | ~36%  |
 
 ---
 
@@ -239,7 +239,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 3.1 – API-Football kliens + mock layer + típusok
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** API-Football kliens megvalósítása environment-based mock réteggel a napi API limit kezeléséhez, TypeScript típusok definiálása.
 
@@ -247,9 +247,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 3.1.1 `src/lib/api-football/mock.ts` létrehozása statikus fixture adatokkal (5 következő meccs, 5 eredmény, tabella, 3 játékos)
-- [ ] 3.1.2 `src/lib/api-football/client.ts` létrehozása: `apiFetch()` függvény mock/valódi váltással (`NEXT_PUBLIC_USE_MOCK_API`), 1 órás Next.js fetch cache
-- [ ] 3.1.3 `src/lib/api-football/types.ts` létrehozása: `ApiFixture`, `ApiPlayer`, `ApiPlayerStats`, `ApiStanding` típusok
+- [x] 3.1.1 `src/lib/api-football/mock.ts` létrehozása statikus fixture adatokkal (5 következő meccs, 5 eredmény, tabella, 3 játékos)
+- [x] 3.1.2 `src/lib/api-football/client.ts` létrehozása: `apiFetch()` függvény mock/valódi váltással (`NEXT_PUBLIC_USE_MOCK_API`), 1 órás Next.js fetch cache
+- [x] 3.1.3 `src/lib/api-football/types.ts` létrehozása: `ApiFixture`, `ApiPlayer`, `ApiPlayerStats`, `ApiStanding` típusok
 
 **Elfogadási kritériumok:**
 
@@ -263,7 +263,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 3.2 – Meccs lekérő függvények
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Meccsekhez tartozó API lekérő függvények megvalósítása.
 
@@ -271,10 +271,10 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 3.2.1 `src/lib/api-football/matches.ts` létrehozása: `BARCA_TEAM_ID`, `LA_LIGA_ID`, `CURRENT_SEASON` konstansok
-- [ ] 3.2.2 `getUpcomingMatches(count)` függvény implementálása
-- [ ] 3.2.3 `getRecentMatches(count)` függvény implementálása
-- [ ] 3.2.4 `getBarçaStanding()` függvény implementálása
+- [x] 3.2.1 `src/lib/api-football/matches.ts` létrehozása: `BARCA_TEAM_ID`, `LA_LIGA_ID`, `CURRENT_SEASON` konstansok
+- [x] 3.2.2 `getUpcomingMatches(count)` függvény implementálása
+- [x] 3.2.3 `getRecentMatches(count)` függvény implementálása
+- [x] 3.2.4 `getBarçaStanding()` függvény implementálása
 
 **Elfogadási kritériumok:**
 
@@ -287,7 +287,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 3.3 – Játékos lekérő függvények
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Játékosokhoz tartozó API lekérő függvények megvalósítása.
 
@@ -295,9 +295,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 3.3.1 `src/lib/api-football/players.ts` létrehozása: `getSquad()` függvény
-- [ ] 3.3.2 `getPlayerStats(playerId)` függvény implementálása
-- [ ] 3.3.3 `getTopScorers(count)` függvény implementálása
+- [x] 3.3.1 `src/lib/api-football/players.ts` létrehozása: `getSquad()` függvény
+- [x] 3.3.2 `getPlayerStats(playerId)` függvény implementálása
+- [x] 3.3.3 `getTopScorers(count)` függvény implementálása
 
 **Elfogadási kritériumok:**
 
@@ -312,7 +312,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 4.1 – Dashboard layout + hírek szekció
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Dashboard oldal és hírek szekció létrehozása.
 
@@ -320,10 +320,10 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 4.1.1 shadcn/ui komponensek telepítése: `card`, `badge`
-- [ ] 4.1.2 `src/app/(protected)/dashboard/page.tsx` szerver komponens létrehozása `requireAuth` hívással
-- [ ] 4.1.3 `src/components/dashboard/NewsSection.tsx` létrehozása: 3 legfrissebb publikált hír Supabase-ből
-- [ ] 4.1.4 `NewsSection` hozzáadása a dashboard page-hez
+- [x] 4.1.1 shadcn/ui komponensek telepítése: `card`, `badge`
+- [x] 4.1.2 `src/app/(protected)/dashboard/page.tsx` szerver komponens létrehozása `requireAuth` hívással
+- [x] 4.1.3 `src/components/dashboard/NewsSection.tsx` létrehozása: 3 legfrissebb publikált hír Supabase-ből
+- [x] 4.1.4 `NewsSection` hozzáadása a dashboard page-hez
 
 **Elfogadási kritériumok:**
 
@@ -337,7 +337,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 4.2 – Dashboard meccs szekció
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Következő meccs és utolsó eredmények megjelenítése a dashboardon.
 
@@ -345,10 +345,10 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 4.2.1 `src/components/dashboard/MatchSection.tsx` létrehozása try/catch blokkokkal
-- [ ] 4.2.2 Következő meccs megjelenítése: dátum, ellenfél, helyszín, "Jegyet venni" link (ha van jegy)
-- [ ] 4.2.3 Utolsó 3 eredmény kártyák megjelenítése
-- [ ] 4.2.4 `MatchSection` hozzáadása a dashboard page-hez
+- [x] 4.2.1 `src/components/dashboard/MatchSection.tsx` létrehozása try/catch blokkokkal
+- [x] 4.2.2 Következő meccs megjelenítése: dátum, ellenfél, helyszín, "Jegyet venni" link (ha van jegy)
+- [x] 4.2.3 Utolsó 3 eredmény kártyák megjelenítése
+- [x] 4.2.4 `MatchSection` hozzáadása a dashboard page-hez
 
 **Elfogadási kritériumok:**
 
@@ -362,7 +362,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 4.3 – Dashboard tabella + játékos szekció
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** La Liga tabella (Barça sor) és top góllövők megjelenítése a dashboardon.
 
@@ -370,9 +370,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 4.3.1 `src/components/dashboard/StandingsSection.tsx` létrehozása try/catch blokkkal
-- [ ] 4.3.2 `src/components/dashboard/PlayersSection.tsx` létrehozása: 3 top góllövő kártya try/catch blokkkal
-- [ ] 4.3.3 Mindkét szekció hozzáadása a dashboard page-hez
+- [x] 4.3.1 `src/components/dashboard/StandingsSection.tsx` létrehozása try/catch blokkkal
+- [x] 4.3.2 `src/components/dashboard/PlayersSection.tsx` létrehozása: 3 top góllövő kártya try/catch blokkkal
+- [x] 4.3.3 Mindkét szekció hozzáadása a dashboard page-hez
 
 **Elfogadási kritériumok:**
 
@@ -386,7 +386,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 4.4 – Dashboard trófeák + szavazás szekció
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Statikus trófeák szekció és aktív szavazás előnézet hozzáadása a dashboardhoz.
 
@@ -394,9 +394,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 4.4.1 `src/components/dashboard/TrophiesSection.tsx` létrehozása statikus adatokkal (La Liga: 27, Copa del Rey: 31, CL: 5, Supercopa: 15)
-- [ ] 4.4.2 `src/components/dashboard/PollSection.tsx` létrehozása: aktív szavazás Supabase-ből, "Hamarosan új szavazás" üres állapot
-- [ ] 4.4.3 Mindkét szekció hozzáadása a dashboard page-hez
+- [x] 4.4.1 `src/components/dashboard/TrophiesSection.tsx` létrehozása statikus adatokkal (La Liga: 27, Copa del Rey: 31, CL: 5, Supercopa: 15)
+- [x] 4.4.2 `src/components/dashboard/PollSection.tsx` létrehozása: aktív szavazás Supabase-ből, "Hamarosan új szavazás" üres állapot
+- [x] 4.4.3 Mindkét szekció hozzáadása a dashboard page-hez
 
 **Elfogadási kritériumok:**
 

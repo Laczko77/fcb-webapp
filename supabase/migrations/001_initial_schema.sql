@@ -90,6 +90,7 @@ create table if not exists public.purchased_tickets (
 create table if not exists public.polls (
   id          uuid        primary key default uuid_generate_v4(),
   question    text        not null,
+  is_active   boolean     not null default false,
   created_by  uuid        references public.profiles(id) on delete set null,
   created_at  timestamptz not null default now(),
   ends_at     timestamptz

@@ -4,7 +4,7 @@ description: All table names, key columns, FK relationships, RLS patterns, and t
 type: project
 ---
 
-Migration file: `supabase/migrations/001_initial_schema.sql`
+Migration files: `supabase/migrations/001_initial_schema.sql`, `002_polls_is_active.sql`
 
 ## Tables
 
@@ -17,7 +17,7 @@ Migration file: `supabase/migrations/001_initial_schema.sql`
 | `order_items` | uuid | `order_id` FK orders, `product_id` FK products |
 | `match_tickets` | uuid | `match_id` text (API-Football fixture id), `available_seats` int |
 | `purchased_tickets` | uuid | `user_id` FK profiles, `ticket_id` FK match_tickets |
-| `polls` | uuid | `created_by` FK profiles, `ends_at` timestamptz nullable |
+| `polls` | uuid | `is_active` boolean default false, `created_by` FK profiles, `ends_at` timestamptz nullable |
 | `poll_options` | uuid | `poll_id` FK polls, `display_order` int |
 | `poll_votes` | uuid | unique constraint (poll_id, user_id) — one vote per user per poll |
 | `chat_messages` | uuid | `user_id` FK profiles, `content` text |
