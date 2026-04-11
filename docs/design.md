@@ -18,9 +18,8 @@ TYPOGRAPHY (Google Fonts + next/font):
   - Space Mono → kis uppercase labelek, statisztikák, metaadatok
 FORBIDDEN: Inter, Roboto, Arial, system-ui, Space Grotesk
 DESIGN RULES:
-  - border-radius: 0px MINDENHOL (gombok, kártyák, inputok)
   - Noise grain texture overlay: minden section/page-en (svg feTurbulence vagy CSS)
   - Aszimmetrikus layoutok: ne centeren, hanem left-aligned editorial
-  - Animáció: staggered reveal belépéskor + hover glow hatások
+  - Animáció
   
 ```

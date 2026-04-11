@@ -1,3 +1,4 @@
+- [BarcaPulse Design System](design_system.md) — CSS tokens, typography (Bebas Neue/DM Sans/Space Mono), noise grain overlay, forbidden fonts
 - [Project Stack and Configuration](project_stack.md) — installed packages, versions, shadcn style, zod already present
 - [Environment Variables Setup](project_env.md) — required env vars, file locations, gitignore exceptions for example files
 - [Supabase Schema Overview](supabase_schema.md) — all tables, FK structure, RLS patterns, triggers, and Storage bucket names

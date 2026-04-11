@@ -1,1 +1,1 @@
-- [Backlog State and Progress](project_backlog_state.md) — current completion ~14%, Iter 0.1 DONE, 36 tasks remaining across Phases 0–5
+- [Backlog State and Progress](project_backlog_state.md) — current completion ~67%, Iters 0.1–1.2 DONE, 14 tasks remaining across Phases 1–5

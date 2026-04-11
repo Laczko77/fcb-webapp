@@ -19,3 +19,12 @@ Installed stack (verified 2026-04-11):
 **How to apply:** Do not re-install these packages. When adding new shadcn components, use `npx shadcn@latest add <component>` from project root.
 
 Notable: package name is "temp-next" (should eventually be renamed to fcb-webapp, but not a blocker).
+
+shadcn/ui components installed (as of Iter 1.1):
+- button.tsx — was already present before Iter 1.1
+- card.tsx, input.tsx, label.tsx — added during Iter 1.1 (`npx shadcn@latest add card input label`)
+
+Zod v4 API notes (verified 2026-04-11):
+- Top-level `z.email()` is the v4 syntax, NOT `z.string().email()`
+- `safeParse` returns `{ success, data, error }` — error has `.issues[]` array (not `.flatten()`)
+- First issue message: `parsed.error.issues[0]?.message`

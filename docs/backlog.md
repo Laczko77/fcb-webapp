@@ -11,9 +11,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 | Metrika              | Érték |
 |----------------------|-------|
 | Összes feladat       | 42    |
-| Elvégzett feladat    | 19    |
-| Hátralévő feladat    | 23    |
-| Készültség           | ~45%  |
+| Elvégzett feladat    | 38    |
+| Hátralévő feladat    | 4     |
+| Készültség           | ~90%  |
 
 ---
 
@@ -111,7 +111,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 1.1 – Regisztrációs oldal
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Felhasználói regisztrációs oldal létrehozása Supabase Auth-szal és profil insert-tel.
 
@@ -119,11 +119,11 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 1.1.1 shadcn/ui komponensek telepítése: `card`, `input`, `label`, `button`
-- [ ] 1.1.2 `src/app/(auth)/register/page.tsx` létrehozása (teljes név, email, jelszó, becenév mezőkkel)
-- [ ] 1.1.3 `src/app/(auth)/register/actions.ts` Server Action: `signUp` + `profiles` insert + redirect `/login?registered=true`-ra
-- [ ] 1.1.4 Sikeres regisztráció üzenet megjelenítése (`registered=true` query param esetén)
-- [ ] 1.1.5 Validációs hibák megjelenítése a mezők alatt
+- [x] 1.1.1 shadcn/ui komponensek telepítése: `card`, `input`, `label`, `button`
+- [x] 1.1.2 `src/app/(auth)/register/page.tsx` létrehozása (teljes név, email, jelszó, becenév mezőkkel)
+- [x] 1.1.3 `src/app/(auth)/register/actions.ts` Server Action: `signUp` + `profiles` insert + redirect `/login?registered=true`-ra
+- [x] 1.1.4 Sikeres regisztráció üzenet megjelenítése (`registered=true` query param esetén)
+- [x] 1.1.5 Validációs hibák megjelenítése a mezők alatt
 
 **Elfogadási kritériumok:**
 
@@ -138,7 +138,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 1.2 – Bejelentkezési oldal
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Bejelentkezési oldal létrehozása email + jelszó alapú authentikációval.
 
@@ -146,10 +146,10 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 1.2.1 `src/app/(auth)/login/page.tsx` létrehozása (email, jelszó mezőkkel)
-- [ ] 1.2.2 `src/app/(auth)/login/actions.ts` Server Action: `signInWithPassword` + redirect `/dashboard`-ra
-- [ ] 1.2.3 Hibás bejelentkezés esetén hibaüzenet megjelenítése
-- [ ] 1.2.4 Link a regisztrációs oldalra
+- [x] 1.2.1 `src/app/(auth)/login/page.tsx` létrehozása (email, jelszó mezőkkel)
+- [x] 1.2.2 `src/app/(auth)/login/actions.ts` Server Action: `signInWithPassword` + redirect `/dashboard`-ra
+- [x] 1.2.3 Hibás bejelentkezés esetén hibaüzenet megjelenítése
+- [x] 1.2.4 Link a regisztrációs oldalra
 
 **Elfogadási kritériumok:**
 
@@ -163,7 +163,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 1.3 – Auth helper + user lekérés
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Szerver oldali auth helper függvények létrehozása a védett oldalak számára.
 
@@ -171,9 +171,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 1.3.1 `src/lib/auth/getUser.ts` létrehozása: `{ user, profile }` visszaadása szerver oldalon
-- [ ] 1.3.2 `src/lib/auth/requireAuth.ts` létrehozása: user nélkül redirect `/login`-ra
-- [ ] 1.3.3 `src/lib/auth/requireAdmin.ts` létrehozása: nem admin esetén redirect `/dashboard`-ra
+- [x] 1.3.1 `src/lib/auth/getUser.ts` létrehozása: `{ user, profile }` visszaadása szerver oldalon
+- [x] 1.3.2 `src/lib/auth/requireAuth.ts` létrehozása: user nélkül redirect `/login`-ra
+- [x] 1.3.3 `src/lib/auth/requireAdmin.ts` létrehozása: nem admin esetén redirect `/dashboard`-ra
 
 **Elfogadási kritériumok:**
 
@@ -189,7 +189,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 2.1 – Landing page alap struktúra
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Nyilvános landing page létrehozása Hero-, Klubról- és Fan oldal bemutató szekciókkal.
 
@@ -197,10 +197,10 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 2.1.1 `src/app/(guest)/page.tsx` létrehozása
-- [ ] 2.1.2 Hero szekció: teljes képernyős, "Més que un club" cím, alcím, Regisztráció + Bejelentkezés gombok
-- [ ] 2.1.3 Klubról szekció: 3 statisztikai kártya (1899 óta, 125+ trófea, Més que un club)
-- [ ] 2.1.4 Fan oldal bemutató szekció: rövid szöveges leírás
+- [x] 2.1.1 `src/app/(guest)/page.tsx` létrehozása
+- [x] 2.1.2 Hero szekció: teljes képernyős, "Més que un club" cím, alcím, Regisztráció + Bejelentkezés gombok
+- [x] 2.1.3 Klubról szekció: 3 statisztikai kártya (1899 óta, 125+ trófea, Més que un club)
+- [x] 2.1.4 Fan oldal bemutató szekció: rövid szöveges leírás
 
 **Elfogadási kritériumok:**
 
@@ -214,7 +214,7 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 ### Iter 2.2 – Feature kártyák szekció
 
-**Státusz:** TODO
+**Státusz:** DONE
 
 **Cél:** Feature grid és CTA banner hozzáadása a landing page-hez.
 
@@ -222,9 +222,9 @@ Egy FC Barcelona rajongói webapp, ahol a felhasználók regisztrálhatnak, hír
 
 **Feladatok:**
 
-- [ ] 2.2.1 Feature grid szekció: 4 kártya (Hírek, Jegyvásárlás, Webshop, Közösség) lucide-react ikonokkal
-- [ ] 2.2.2 CTA banner szekció: "Csatlakozz a közösséghez" cím + "Regisztrálj most" gomb
-- [ ] 2.2.3 `lucide-react` csomag telepítése
+- [x] 2.2.1 Feature grid szekció: 4 kártya (Hírek, Jegyvásárlás, Webshop, Közösség) lucide-react ikonokkal
+- [x] 2.2.2 CTA banner szekció: "Csatlakozz a közösséghez" cím + "Regisztrálj most" gomb
+- [x] 2.2.3 `lucide-react` csomag telepítése
 
 **Elfogadási kritériumok:**
 
