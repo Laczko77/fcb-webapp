@@ -4,9 +4,8 @@ import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { AuthApiError } from '@supabase/supabase-js'
 import { createClient } from '@/lib/supabase/server'
-import type { ActionState } from '@/app/(auth)/register/actions'
 
-export type { ActionState }
+export type ActionState = { error?: string } | null
 
 const loginSchema = z.object({
   email: z.email('Érvénytelen e-mail cím.'),

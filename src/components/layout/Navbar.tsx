@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, Shield, LogOut, User as UserIcon, ChevronRight } from 'lucide-react'
+import { signOut } from '@/app/actions/auth'
 
 export interface NavUser {
   id: string
@@ -73,7 +74,7 @@ export default function Navbar({ user, isAdmin = false }: NavbarProps) {
                     {user.full_name ?? user.email}
                   </span>
                 </Link>
-                <form action="/auth/signout" method="post">
+                <form action={signOut}>
                   <button
                     type="submit"
                     className="flex items-center gap-1.5 text-[#9B97B8] font-label text-xs hover:text-red-400 transition-colors"
@@ -154,7 +155,7 @@ export default function Navbar({ user, isAdmin = false }: NavbarProps) {
                     Admin panel
                   </Link>
                 )}
-                <form action="/auth/signout" method="post">
+                <form action={signOut}>
                   <button
                     type="submit"
                     className="flex items-center gap-2 py-2 text-[#9B97B8] font-label text-xs hover:text-red-400 transition-colors"
