@@ -1,10 +1,19 @@
-// Guest oldalak layout wrappere (pl. login, register).
-// Ezek a route-ok nem igényelnek auth ellenőrzést.
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 export default function GuestLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  const user = null
+  const isAdmin = false
+
+  return (
+    <>
+      <Navbar user={user} isAdmin={isAdmin} />
+      <main>{children}</main>
+      <Footer />
+    </>
+  )
 }

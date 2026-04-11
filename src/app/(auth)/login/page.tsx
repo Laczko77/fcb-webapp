@@ -9,22 +9,18 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
-    <div className="relative flex min-h-[calc(100vh-65px)] items-start justify-center overflow-hidden px-4 pt-20 sm:pl-16 lg:pl-32 lg:justify-start py-16 sm:items-start">
-      {/* Background glows */}
-      <div className="pointer-events-none absolute -right-32 top-1/3 h-[500px] w-[500px] rounded-full bg-[#A50044]/10 blur-[120px]" />
-      <div className="pointer-events-none absolute -left-32 bottom-1/4 h-[500px] w-[500px] rounded-full bg-[#004D98]/10 blur-[120px]" />
-      {/* Grid texture */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            'linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px)',
-          backgroundSize: '40px 40px',
-        }}
-      />
-      <Suspense>
-        <LoginForm />
-      </Suspense>
+    <div className="min-h-screen relative flex items-center justify-center px-4 py-16">
+      {/* Full-page gradient mesh background */}
+      <div className="absolute inset-0 hero-mesh" />
+
+      {/* Form card */}
+      <div className="relative z-10 w-full max-w-md">
+        <div className="bg-[#1c192f]/90 backdrop-blur-md border border-white/10 p-8 md:p-12">
+          <Suspense>
+            <LoginForm />
+          </Suspense>
+        </div>
+      </div>
     </div>
   )
 }
