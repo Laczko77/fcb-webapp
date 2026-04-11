@@ -1,0 +1,2 @@
+- [BarcaPulse Design System Tokens](project_barcapulse_design_system.md) — colors, fonts, layout conventions locked in Iteration 1
+- [Navbar Auth Integration Placeholder](project_auth_integration.md) — auth props wired but not yet fetching; layout.tsx is the integration point

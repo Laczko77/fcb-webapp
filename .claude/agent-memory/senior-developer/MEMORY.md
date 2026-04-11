@@ -1,0 +1,4 @@
+- [Project Stack and Configuration](project_stack.md) — installed packages, versions, shadcn style, zod already present
+- [Environment Variables Setup](project_env.md) — required env vars, file locations, gitignore exceptions for example files
+- [Supabase Schema Overview](supabase_schema.md) — all tables, FK structure, RLS patterns, triggers, and Storage bucket names
+- [Supabase Client Setup](supabase_clients.md) — client/server/middleware factory patterns, route protection rules, JWT-only role check
