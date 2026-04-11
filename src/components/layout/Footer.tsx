@@ -12,9 +12,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-white/10 bg-[#0A0A0F]">
+    <footer className="border-t border-white/[0.07] bg-[#1D1A31]">
       {/* Top accent */}
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#A50044]/60 to-transparent" />
+      <div className="h-px w-full bg-gradient-to-r from-[#A50044] via-[#EDBB00] to-[#004D98]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main footer row */}
@@ -22,12 +22,12 @@ export default function Footer() {
           {/* Brand */}
           <Link
             href="/"
-            className="group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A50044] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] rounded-sm"
+            className="group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A50044] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1D1A31] rounded-sm"
           >
             <div className="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-br from-[#A50044] to-[#004D98] shadow-md shadow-[#A50044]/20">
               <Shield className="size-3.5 text-white" strokeWidth={2.5} />
             </div>
-            <span className="font-['Oswald',sans-serif] text-lg font-bold tracking-wide text-white/80 transition-colors group-hover:text-white">
+            <span className="font-['Bebas_Neue',sans-serif] text-xl tracking-widest text-[#F5F0FF]/80 transition-colors group-hover:text-[#F5F0FF]">
               Barca<span className="text-[#A50044]">Pulse</span>
             </span>
           </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-white/40 transition-colors hover:text-white/80 focus-visible:outline-none focus-visible:underline"
+                className="font-['DM_Sans',sans-serif] text-sm text-[#9B97B8] transition-colors hover:text-[#F5F0FF] focus-visible:outline-none focus-visible:underline"
               >
                 {label}
               </Link>
@@ -50,11 +50,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col items-center gap-1 border-t border-white/[0.06] py-4 sm:flex-row sm:justify-between">
-          <p className="text-xs text-white/25">
+        <div className="flex flex-col items-center gap-1 border-t border-white/[0.07] py-4 sm:flex-row sm:justify-between">
+          <p className="font-['DM_Sans',sans-serif] text-xs text-[#9B97B8]/50">
             &copy; {currentYear} BarcaPulse. Minden jog fenntartva.
           </p>
-          <p className="text-xs text-white/20">
+          <p className="font-['DM_Sans',sans-serif] text-xs text-[#9B97B8]/40">
             Nem hivatalos rajongói oldal &mdash; nem kapcsolódik az FC Barcelonához.
           </p>
         </div>

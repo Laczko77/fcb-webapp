@@ -33,12 +33,12 @@ function InputField({
     <div className="space-y-1.5">
       <Label
         htmlFor={id}
-        className="text-xs font-semibold uppercase tracking-widest text-white/50"
+        className="font-['Space_Mono',monospace] text-xs uppercase tracking-widest text-[#9B97B8]"
       >
         {label}
       </Label>
       <div className="relative">
-        <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-white/30">
+        <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-[#9B97B8]/50">
           {icon}
         </span>
         <Input
@@ -47,7 +47,7 @@ function InputField({
           type={type}
           placeholder={placeholder}
           autoComplete={autoComplete}
-          className="bg-white/5 border-white/10 text-white placeholder:text-white/30 pl-10 h-11 focus-visible:border-[#A50044]/60 focus-visible:ring-[#A50044]/15"
+          className="bg-[#2E2B4A] border-white/[0.07] text-[#F5F0FF] placeholder:text-[#9B97B8]/40 pl-10 h-11 focus-visible:border-[#A50044]/60 focus-visible:ring-[#A50044]/15"
         />
       </div>
     </div>
@@ -60,20 +60,20 @@ export default function RegisterForm() {
   return (
     <div className="w-full max-w-md">
       {/* Card */}
-      <div className="rounded-xl border border-white/[0.08] bg-[#0D0D14]/90 backdrop-blur-xl shadow-2xl shadow-black/60">
+      <div className="rounded-xl border border-white/[0.07] bg-[#252240] backdrop-blur-xl shadow-2xl shadow-black/60">
         {/* Brand accent bar */}
-        <div className="h-0.5 w-full bg-gradient-to-r from-[#A50044] via-[#004D98] to-[#A50044] rounded-t-xl" />
+        <div className="h-0.5 w-full bg-gradient-to-r from-[#A50044] via-[#EDBB00] to-[#004D98] rounded-t-xl" />
 
         <div className="px-8 pb-10 pt-8">
           {/* Header */}
-          <div className="mb-8 text-center">
+          <div className="mb-8">
             <div className="mb-5 inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-[#A50044] to-[#004D98] p-3 shadow-lg shadow-[#A50044]/30">
               <Shield className="size-7 text-white" strokeWidth={2.5} />
             </div>
-            <h1 className="font-['Oswald',sans-serif] text-3xl font-bold uppercase tracking-wider text-white">
+            <h1 className="font-['Bebas_Neue',sans-serif] text-4xl tracking-widest text-[#F5F0FF]">
               CSATLAKOZZ
             </h1>
-            <p className="mt-2 text-sm text-white/45">
+            <p className="mt-2 font-['DM_Sans',sans-serif] text-sm text-[#9B97B8]">
               Légy részese a BarcaPulse közösségnek
             </p>
           </div>
@@ -84,10 +84,10 @@ export default function RegisterForm() {
             {state?.error && (
               <div
                 role="alert"
-                className="flex items-start gap-3 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3"
+                className="flex items-start gap-3 rounded-lg border border-[#A50044]/30 bg-[#A50044]/10 px-4 py-3"
               >
-                <AlertCircle className="mt-0.5 size-4 shrink-0 text-red-400" />
-                <p className="text-sm text-red-300">{state.error}</p>
+                <AlertCircle className="mt-0.5 size-4 shrink-0 text-[#F5F0FF]" />
+                <p className="font-['DM_Sans',sans-serif] text-sm text-[#F5F0FF]">{state.error}</p>
               </div>
             )}
 
@@ -132,7 +132,7 @@ export default function RegisterForm() {
             <SubmitButton />
 
             {/* Login link */}
-            <p className="text-center text-sm text-white/40">
+            <p className="font-['DM_Sans',sans-serif] text-center text-sm text-[#9B97B8]">
               Már van fiókod?{' '}
               <Link
                 href="/login"

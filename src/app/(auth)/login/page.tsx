@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
-    <div className="relative flex min-h-[calc(100vh-65px)] items-center justify-center overflow-hidden px-4 py-16">
+    <div className="relative flex min-h-[calc(100vh-65px)] items-start justify-center overflow-hidden px-4 pt-20 sm:pl-16 lg:pl-32 lg:justify-start py-16 sm:items-start">
       {/* Background glows */}
       <div className="pointer-events-none absolute -right-32 top-1/3 h-[500px] w-[500px] rounded-full bg-[#A50044]/10 blur-[120px]" />
       <div className="pointer-events-none absolute -left-32 bottom-1/4 h-[500px] w-[500px] rounded-full bg-[#004D98]/10 blur-[120px]" />

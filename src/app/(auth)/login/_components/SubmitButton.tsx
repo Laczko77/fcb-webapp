@@ -17,7 +17,7 @@ export function SubmitButton() {
         transition-all duration-200
         hover:bg-[#c20050] hover:shadow-[#A50044]/40
         active:scale-[0.98]
-        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A50044] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F]
+        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A50044] focus-visible:ring-offset-2 focus-visible:ring-offset-[#252240]
         disabled:cursor-not-allowed disabled:opacity-60
       "
     >

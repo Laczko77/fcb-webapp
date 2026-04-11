@@ -1,18 +1,27 @@
 import type { Metadata } from 'next'
-import { Inter, Oswald } from 'next/font/google'
+import { Bebas_Neue, DM_Sans, Space_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
-const inter = Inter({
-  variable: '--font-sans',
+const bebasNeue = Bebas_Neue({
+  variable: '--font-display',
   subsets: ['latin'],
+  weight: '400',
   display: 'swap',
 })
 
-const oswald = Oswald({
-  variable: '--font-display',
+const dmSans = DM_Sans({
+  variable: '--font-body',
   subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  display: 'swap',
+})
+
+const spaceMono = Space_Mono({
+  variable: '--font-mono',
+  subsets: ['latin'],
+  weight: ['400', '700'],
   display: 'swap',
 })
 
@@ -35,9 +44,9 @@ export default function RootLayout({
   return (
     <html
       lang="hu"
-      className={`${inter.variable} ${oswald.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${dmSans.variable} ${spaceMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-[#0A0A0F] text-white">
+      <body className="flex min-h-full flex-col bg-[var(--bg-base)] text-[var(--text-primary)]">
         <Navbar user={user} isAdmin={isAdmin} />
         {/* pt-[65px] offsets the fixed navbar (64px height + 1px top accent bar) */}
         <main className="flex-1 pt-[65px]">{children}</main>
